@@ -47,7 +47,7 @@ a{
 
 .title::before {
     position: absolute;
-    content: url( "/img/section/arow.png");
+    content: url( "../img/section/arow.png");
     right: -28px;
 
 }
