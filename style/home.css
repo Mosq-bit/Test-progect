@@ -87,7 +87,7 @@ label {
 
 .form__btn::before {
     position: absolute;
-    content: url("../img/section/clip.png");
+    content: url("/img/section/clip.png");
     right: 10px;
 
 }

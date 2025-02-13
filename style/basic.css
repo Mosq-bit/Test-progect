@@ -47,7 +47,7 @@ a{
 
 .title::before {
     position: absolute;
-    content: url( "../img/section/arow.png");
+    content: url( "/img/section/arow.png");
     right: -28px;
 
 }
@@ -56,10 +56,11 @@ a{
     color: var(--color-section);
 }
 
-.head__title{
+.important__title{
     margin: 80px 0 50px;
     font-size: 48px;
 }
+
 
 
 .divider {

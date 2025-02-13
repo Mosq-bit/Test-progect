@@ -16,6 +16,10 @@
 .news__btn {
     display: flex;
     gap: 20px;
+
+    .active {
+        background-color: var(--bg-btn-active);
+    }
 }
 
 .news__btn-link {
@@ -25,14 +29,14 @@
     border-radius: 5px;
 }
 
-.active {
-    background-color: var(--bg-btn-active);
-}
-
 .news__btn-archive {
     display: flex;
     align-items: center;
     gap: 20px;
+
+    .active {
+        background-color: var(--bg-btn-active);
+    }
 }
 
 .news_archive {
@@ -42,9 +46,7 @@
     border-radius: 5px;
 }
 
-.active {
-    background-color: var(--bg-btn-active);
-}
+
 
 .archive_news {
     padding: 10px 10px;
@@ -59,6 +61,7 @@
 
     gap: 20px;
 }
+
 .news__card {
     display: flex;
     width: min(494px, 100%);
@@ -72,13 +75,58 @@
     font-size: 24px;
 }
 
+.news__buttons-pages {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 
-@media (max-width:1500px){
+
+    .active {
+        background-color: var(--bg-btn-active);
+    }
+
+}
+
+.news__arrow,
+.news__btn-page {
+    padding: 10px;
+    border-radius: 6.29px;
+    background-color: var(--bg-btn-white);
+
+}
+
+.news__arrow+.news__arrow {
+    width: 40px;
+    height: 44px;
+    margin-right: 15px;
+}
+
+
+@media (max-width:1640px) {
     .news__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
+@media (max-width:1325px) {
+
+    .news__cards {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
-}
+    }
+
+    .news__card {
+        width: min(540px, 100%);
+    }
+
+    .two,
+    .three,
+    .four,
+    .five {
+        display: none;
+    }
+
 }
 
 @media (max-width:1064px) {
@@ -96,9 +144,10 @@
 
 
 @media (max-width:755px) {
-    .news{
+    .news {
         padding: 50px 70px;
     }
+
     .news__info {
         font-size: 18px;
     }
@@ -110,14 +159,36 @@
     }
 }
 
+@media (max-width:725px) {
+    .news__card {
+        flex-direction: column-reverse;
+        width: min(350px, 100%);
+        height: min(406px, 100%);
+    }
+
+    .news__card-img {
+        width: min(320px, 100%);
+    }
+}
+
 @media (max-width:585px) {
 
     .news__btn-archive {
 
         flex-wrap: wrap;
     }
+
     .news {
         padding: 20px 20px;
+    }
+
+    .news__buttons-pages {
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    .news__btn-page {
+        padding: 9px
     }
 }
 
@@ -125,8 +196,13 @@
     .news {
         padding: 16px 16px;
     }
+
     .news__btn-link {
         padding: 10px 16px;
+    }
+
+    .news__btn-page {
+        padding: 5px
     }
 
 }
