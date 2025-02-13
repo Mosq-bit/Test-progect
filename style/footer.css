@@ -76,7 +76,7 @@
 }
 
 .footer__info-link-eye::after {
-    content: url("/img/footer/eye.png");
+    content: url("../img/footer/eye.png");
     position: absolute;
     top: -7px;
     left: 0;
