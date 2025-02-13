@@ -50,7 +50,7 @@ input.submit {
     /* перемещаю лупу  */
     position: absolute;
     transform: translate(21px, 24px);
-    background: url("/img/section/search.png") left/30% fixed no-repeat;
+    background: url("../img/section/search.png") left/30% fixed no-repeat;
     border: 0;
     width: 54px;
     height: auto;
@@ -61,7 +61,7 @@ input.submit {
 
 .header__nav::before {
     position: absolute;
-    content: url("/img/section/circle.png");
+    content: url("../img/section/circle.png");
     display: inline-block;
     top: 5px;
     bottom: 0px;
@@ -73,7 +73,7 @@ input.submit {
 
 .header__nav::after {
     position: absolute;
-    content: url("/img/section/circle.png");
+    content: url("../img/section/circle.png");
     display: inline-block;
     top: 5px;
     bottom: 0px;
