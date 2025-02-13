@@ -1,0 +1,195 @@
+
+
+
+
+.form {
+    margin-top: 100px;
+    padding: 20px 20px;
+
+    background-color: var(--bg-form-white);
+    border-radius: 50px;
+
+
+}
+
+.form__group {
+    margin-bottom: 15px;
+    padding: 30px 0 30px 30px;
+
+    background-color: var(--bg-section);
+    color: var(--color-main);
+    border-radius: 15px;
+
+}
+
+.textarea {
+    /* измнять размер только вртикально */
+    resize: vertical;
+    width: 100%;
+
+    padding-bottom: 9px;
+
+    font-size: 18px;
+    color: #000;
+    /* убирает рамку */
+    outline: none;
+    /* убирает растягивание */
+    resize: none;
+
+}
+
+label {
+    font-size: 18px;
+    color: #000;
+}
+
+.checkbox {
+    position: relative;
+    /* отодвигает текст от cheka */
+    padding-left: 35px;
+}
+
+.checkbox input[type=checkbox] {
+    /* уберает стандартный check */
+    display: none;
+}
+
+.checkbox label:after {
+    content: '';
+    display: block;
+    height: 24px;
+    width: 24px;
+    outline: 1px solid #939598;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.checkbox input[type=checkbox]:checked+label:after {
+    outline: 1px solid #939598;
+    border: 2px solid #fff;
+    background-color: var(--color-section);
+}
+
+
+.link__form-checkbox {
+    color: inherit;
+}
+
+.form__btn {
+    margin-bottom: 15px;
+    position: relative;
+    width: min(249px, 100%);
+
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.form__btn::before {
+    position: absolute;
+    content: url("/img/section/clip.png");
+    right: 10px;
+
+}
+
+.form__btn-sub {
+    margin-top: 30px;
+    width: min(345px, 100%);
+
+    border-radius: 50px;
+    font-size: 18px;
+
+}
+
+.form__btn,
+.form__btn-sub {
+    padding: 20px 0 20px;
+    color: var(--color-main);
+    background-color: var(--color-section);
+}
+
+@media (max-width:750px) {
+    .home {
+
+        padding: 20px 0 50px;
+    }
+
+    .home__info {
+        font-size: 24px;
+    }
+
+    .form {
+        margin-top: 40px;
+        font-size: 18px;
+    }
+
+    .form__btn,
+    .form__btn-sub {
+        padding: 12px 0 10px;
+    }
+
+    input,
+    .textarea {
+        font-size: 13px;
+    }
+
+    label {
+        font-size: 10px;
+    }
+
+    .form__group {
+        padding: 22px 0 22px 22px;
+
+    }
+
+    .checkbox label:after {
+
+        height: 20px;
+        width: 20px;
+    }
+
+    .form__btn {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:590px) {
+    
+
+    .home {
+        padding: 25px;
+    }
+
+}
+
+@media (max-width:420px) {
+    .form {
+        margin-top: 30px;
+        padding: 10px 10px;
+    }
+
+}
+
+@media (max-width:400px) {
+    .home {
+        padding: 10px;
+    }
+
+    @media (max-width:390px) {
+        .home__info {
+            font-size: 18px;
+        }
+
+        .form__group {
+            padding: 15px 0 15px 15px;
+
+        }
+
+    }
+
+    @media (max-width:px) {
+        .home {
+            padding: 50px;
+        }
+    }
+}

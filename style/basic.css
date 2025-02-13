@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Actor:regular);
+@import url(https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+
+html{
+    /* плавный скрол */
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width:1920px;
+    font-family: 'Actor', serif;
+    font-weight: 400;
+    /* font-family: "Inter Tight", serif */
+    background-color: var(--bg-body-grey);
+    color: var(--color-main);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1540px;
+
+}
+
+a{
+    color: inherit;
+}
+.section__all {
+    margin-top: 30px;
+    padding: 50px 150px;
+    background-color: var(--bg-section);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.info {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    font-size: 32px;
+}
+
+.title {
+    position: relative;
+
+}
+
+.title::before {
+    position: absolute;
+    content: url( "/img/section/arow.png");
+    right: -28px;
+
+}
+
+.subtitle {
+    color: var(--color-section);
+}
+
+.head__title{
+    margin: 80px 0 50px;
+    font-size: 48px;
+}
+
+
+.divider {
+    margin: 40px 0 40px;
+    /* будет стараться быть 100% но не больше 420 */
+    /* max-width: 420px;
+    width: 100%; */
+    width: min(614px, 100%);
+
+    margin: 0 auto;
+    height: 1px;
+    background-color: #55565A;
+}
+
+.none{
+    display: none;
+}
